@@ -5,6 +5,7 @@ class Counter extends Component {
 		value: this.props.value,
 	};
 
+	// Fallback constructor - in case handleIncrement method fails in the future
 	// constructor() {
 	// 	super();
 	// 	this.handleIncrement = this.handleIncrement.bind(this);
