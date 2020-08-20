@@ -5,9 +5,7 @@ const Counters = (props) => {
 	const { counters, onReset, onDelete, onIncrement } = props;
 	return (
 		<div>
-			<button onClick={onReset} className="btn btn-primary btn-sm m-2">
-				Reset
-			</button>
+			<h4>Counter</h4>
 			{counters.map((counter) => (
 				<Counter
 					key={counter.id}
@@ -16,6 +14,9 @@ const Counters = (props) => {
 					counter={counter}
 				></Counter>
 			))}
+			<button onClick={onReset} className="btn btn-primary btn-sm m-2">
+				Reset
+			</button>
 		</div>
 	);
 };
