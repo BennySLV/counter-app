@@ -19,16 +19,16 @@ class Counter extends Component {
 					{this.formatCount()}
 				</span>
 				<button
-					onClick={() => this.props.onIncrement(this.props.counter)}
+					onClick={() => this.props.onIncrease(this.props.counter)}
 					className="btn btn-secondary btn-sm m-2"
 				>
-					Increment
+					Increase (+ 1)
 				</button>
 				<button
-					onClick={() => this.props.onDecrement(this.props.counter)}
+					onClick={() => this.props.onDecrease(this.props.counter)}
 					className="btn btn-secondary btn-sm m-2"
 				>
-					Decrement
+					Decrease (- 1)
 				</button>
 				<button
 					onClick={() => this.props.onDelete(this.props.counter.id)}
