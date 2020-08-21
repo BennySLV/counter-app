@@ -17,6 +17,10 @@ class Counter extends Component {
 		console.log("Previous state: ", prevState);
 	}
 
+	componentWillUnmount() {
+		console.log("Counter - unmount");
+	}
+
 	render() {
 		console.log("Counter - rendered");
 
