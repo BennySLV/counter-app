@@ -12,6 +12,11 @@ class Counter extends Component {
 		fontWeight: "bold",
 	};
 
+	componentDidUpdate(prevProps, prevState) {
+		console.log("Previous props: ", prevProps);
+		console.log("Previous state: ", prevState);
+	}
+
 	render() {
 		console.log("Counter - rendered");
 
